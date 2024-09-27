@@ -1,16 +1,16 @@
 # AccuKnox_QA_Trainee_Role_Problem-2
 
-# System Health Monitoring Script.py
+## System Health Monitoring Script.py
 
     import psutil
     import logging
     from datetime import datetime
 
-# Set up logging
+## Set up logging
     
     logging.basicConfig(filename='system_health.log', level=logging.INFO, format='%(asctime)s - %(message)s')
 
-# Thresholds
+## Thresholds
 
     CPU_THRESHOLD = 80  # in percentage
     MEMORY_THRESHOLD = 80  # in percentage
@@ -49,7 +49,7 @@
         check_disk_usage()
         check_running_processes()
 
-# AppHealth.py
+## AppHealth.py
 
     import requests
     import logging
@@ -77,29 +77,29 @@
     if _name_ == "_main_":
         check_application_health()
 
-# SystemHealth.py
+## SystemHealth.py
 
     from flask import Flask, jsonify, render_template
     import psutil
     import logging
     import os
 
-# Initialize Flask application
+## Initialize Flask application
 
     app = Flask(_name_)
 
-# Set up logging
+## Set up logging
 
     logging.basicConfig(filename='app_health.log', level=logging.INFO, format='%(asctime)s - %(message)s')
 
-# Thresholds for system health checks
+## Thresholds for system health checks
 
     CPU_THRESHOLD = 80  # in percentage
     MEMORY_THRESHOLD = 80  # in percentage
     DISK_THRESHOLD = 80  # in percentage
     PROCESS_THRESHOLD = 200  # number of processes
 
-# Path to local application file to check
+## Path to local application file to check
     APP_FILE_PATH = 'D:/B.TECH/Mini Project/QA/por/po/index.html'  # Replace with your actual file path
     
     def log_alert(message):
@@ -160,7 +160,7 @@
     if _name_ == '_main_':
         app.run(debug=True)
 
-# Health.py
+## Health.py
 
     <!DOCTYPE html>
     <html lang="en">
@@ -218,7 +218,7 @@
     </body>`
     </html>
 
-# Health.js
+## Health.js
 
     etch('/api/index.html')
 
@@ -243,7 +243,7 @@
         statusDiv.innerText = Error: ${error};
         statusDiv.className = 'status down';});
 
-# Health.json
+## Health.json
 
     {
     "message": "Application is up and running."
